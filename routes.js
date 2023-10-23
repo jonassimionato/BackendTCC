@@ -97,7 +97,7 @@ async function routes(fastify, options) {
     }
   });
 
-  fastify.post("/verify", (request, reply) => {
+  fastify.get("/verify", (request, reply) => {
     const { token } = request.header;
     console.log(`Token: ${token}`);
 
