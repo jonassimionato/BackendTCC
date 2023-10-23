@@ -1,5 +1,5 @@
 {
-  "name": "backendTCC",
+  "name": "backendtcc",
   "version": "1.0.0",
   "description": "Backend para armazenar usuários",
   "main": "index.js",
