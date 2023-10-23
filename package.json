@@ -1,7 +1,7 @@
 {
-  "name": "serverdevmrngn",
+  "name": "backendTCC",
   "version": "1.0.0",
-  "description": "Servidor que utiliza prisma para criar usuarios",
+  "description": "Backend para armazenar usuários",
   "main": "index.js",
   "engines": {
     "node": "18.x"
@@ -13,7 +13,7 @@
     "vercel-build": "npx prisma migrate deploy",
     "postinstall": "prisma generate"
   },
-  "author": "devmarangoni.com",
+  "author": "jonas",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.8.7",
