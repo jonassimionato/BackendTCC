@@ -96,6 +96,14 @@ async function routes(fastify, options) {
         .send(JSON.stringify({erro: `Aconteceu um erro inesperado: ${e}`}));
     }
   });
+
+  fastify.post("/verify", (request, reply) => {
+    const { token } = request.header;
+    console.log(`Token: ${token}`);
+
+    const teste = jwt.verify(token, process.env.ACCESS_TOKEN_SECRET);
+    console.log(`Teste: ${teste}`);
+  })
 }
 
 module.exports = routes;
